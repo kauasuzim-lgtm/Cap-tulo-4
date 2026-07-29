@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Neon Nights</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #0B0033;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+header {
+  background-color: #00FFF0;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 16px 0;
+  overflow: hidden;
+}
+header .capa {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+header h1 {
+  margin: 16px 0 4px 0;
+  font-size: 2rem;
+}
+header p {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.9;
+}
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.post {
+  background-color: #1a1a2e;
+  color: #EEEEEE;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 24px;
+  border: 1px solid #FF00E5;
+}
+.post-icone {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+h2 { margin-top: 0; color: #FF00E5; }
+.autor { font-style: italic; opacity: 0.7; margin-top: -8px; }
+footer { text-align: center; padding: 16px; opacity: 0.6; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAADcCAIAAAAHqlLAAAAGhElEQVR4nO3dvVFbWxSG4YWHDPXiAHfgXLW4iFuAayGnAyc04Qog5ga6oyvzZyF95+wfPU8kBmZY4TtrH+1zdVO3BQBAzpfWAwAAzEZgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAUI9113oEpnLdegAAaEBRsSiBBcBFUFSsSWABMKe/FtWmtutMwgUSWABMQlHRD4EFwJCOOfJTVLQisAAYg6JiIAILgE458mNcAguAXigqpiGwAGhGUTErgQVARxQVcxBYALSkqJjS1U3dtp4BAGAqXvYMABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAwNge6671CC8JLABgYLu66q2xBBYAMKrDruqqsQQWADCDTW1bj/A/gQUADOlwZdVVXZXAAgBG1NWB4GsCCwAYz+HKqrf1VQksAGBQu67qsK6q6uqmblvPAAAwFRssAIAwgQUAEHbdegAAgHnsvt4osAAAAg5vjhBYAABneXEp16a2AgsAIGN/Z4SH3AFgPT++/mo9AovY1PbwRi73YAHAek4OrJ8P37KTsChHhAAwgNPKTJa1YoMFAL1b82BxhSZ7rLs+328TJLAAYE7dZtn+O3cTZ5bAAgD+s06T/fPw+/DHKTNLYAEAZzkty+bOLIEFADTw4+uvnw/fXl/R2WqeLIEFADQ2X2YJLACgCzNllsACADoyR2YJLACgO4eZNWJjCSwAoFPjZpbAAgD6NeiJocACAHo3XGYJLABgDANllsACAEYyRGYJLABgPJ1nlsACAEbVbWYJLABgbB1mlsACAGbQVWYJrB49Pd/fXH1vPQUAjKeTzBJYfXl6vt99EFgAcLLmmSWwerFPqx2BBQBnaphZAquxF11V0goAoppklsBqRloBwGpWziyB1YDTQABoYrXMElirklYA0NxhZi3UWAJrDU4DAaA3i2aWwFqWtAKAbi13YiiwluI0EACGsERmCayluDIUAAaSzSyBtRSvuwGA4aQyS2ABAPzh/MwSWAAAbzgns76khwEAmMGmticfEQosAIB3nZZZjggBAMJssAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIAOMXT8/17vxJYAACftqur9xpLYAEAfM5hV73ZWAILAOATXhTVzdX3138jsAAAjnVMXZXAAgA40pF1VVXXyw8DAHzkse52Hza1bTsJHzi+rsoGCwDaUldD+FRdlcACAPjYZ+uqBBYANGR91b8T6qoEFgDAkY6sqxJYANCK9VX/DtdXx9dVCSwAgDd98KrBvxJYANCA9VXnTnv0ak9gAQD84cy6KoEFAOuzvurZ+XVVAgsAYC9SVyWwAGBl1lfdStVVCSwAaEJd9SZYVyWwAGBN+/UVXcnWVQksAFiNw8E+xeuqBBYAcMmWqKsSWACwDuurDi1UVyWwAIDLtFxdlcACgBVYX/Vm0boqgQUAXJql66oEFgAszfqqKyvUVQksAOByrFNXJbAAYFHWV91arq5KYAEAF+JwfbVoXZXAAoDlWF/148Xh4NKubup2zf8HALCy1R692rPBAgBmtn5dlcACACbWpK5KYAEAs2pVVyWwAIApNayrElgAwHza1lUJLABgMs3rqgQWADCZw6JqUlclsACA+ey6qlVdlYtGAQDibLAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAgTWAAAYQILACBMYAEAhAksAIAwgQUAECawAADCBBYAQJjAAgAIE1gAAGECCwAgTGABAIQJLACAMIEFABAmsAAAwgQWAECYwAIACBNYAABhAgsAIExgAQCECSwAgDCBBQAQJrAAAMIEFgBAmMACAAj7F/qeOl8X8yXPAAAAAElFTkSuQmCC" alt="Capa do blog Neon Nights" class="capa">
+<h1>Neon Nights</h1>
+<p>Programando enquanto a cidade dorme</p>
+</header>
+<main>
+<article class="post">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAAB/UlEQVR4nO2aTW7FIAyEk6q7HKdHeOfusbpuF5YiBI/E+Gegjmf3pAYzfIMaTPZj+9qepI/ZE0ArDUdXGo6uNBxdaTi6phn++f2eUjcJQ0R4p0BOwv4isMf+2mZATsLRhTZc5nlKqpOwp0q8JDzkJBxdOMNtnkngVCdhH/XwkpCQk3B0IQxf55kES3USthYHLwkDOQlHl69hfp5JgFQnYTuN4iV5Q/6sfs/qj7cynEm56DXhUSD8St5PMUfbex+1nAtsWx6g65l39/D51+uEnKNbTl3C1fMXQywi5lRvDFdjLeuZP0PWv6XF4z3Eg0W4Gpc5NECCKQ0YrmpM9yybyfCb1iLxFq/7MOGqnqCkUsrSQsNVbZhnfUXV4QEcb5P1VRGu5qGcCqaEgWGSX7xtRzY7D3tvY6vxs+Mhlay/wZFtDyQJR5eNYb88kwxTnYSjy8Cwd55JVql+3OfDdSPeW6fJ0jPygKl9lx6acftWPPqerF8g3Fc8b72VzuN8xVNaffthGvJc7X4/zAwtDLVBi6fnRHaOvX1KuY1dCPPBtvJGbW/4esdy5Lqr5ZFuo2Xe3OoNqEm1cQNgU4Bt5YHa5l3atUFtu6tVNw/H/kL24sta4lSrCINvHkzirT08gC+W9IdECeHpN6Ya1ELC0y+HxajNrlr+i7KnFV2PM/wHaSg7Xm63hSkAAAAASUVORK5CYII=" alt="Ícone do blog Neon Nights" class="post-icone">
+<h2>Codando sob luzes neon</h2>
+<p class="autor">Por: Estudante Alura</p>
+<p>Há algo especial em programar de madrugada, com a cidade em silêncio e a mente mais criativa. Este é o meu diário de código noturno.</p>
+</article>
+</main>
+<footer><p>&copy; 2026 Neon Nights</p></footer>
+</body>
+</html>
